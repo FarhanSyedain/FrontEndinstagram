@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/models/post.dart';
 import 'package:instagram/providers/posts.dart';
 import 'package:provider/provider.dart';
 import 'screens/main/tabScreen.dart';
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: themes.lightTheme,
         darkTheme: themes.darkTheme,
-        themeMode: ThemeMode.system,
+        themeMode: ThemeMode.dark,
         home: TabScreen(),
       ),
     );
