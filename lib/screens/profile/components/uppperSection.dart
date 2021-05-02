@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/components/profileAvatar/avatar.dart';
+import 'package:instagram/screens/profile/screens/editProfile.dart';
 import 'package:instagram/utilities/highlightMentionsHashtags.dart';
 
 class UpperSection extends StatelessWidget {
@@ -109,7 +110,13 @@ class UpperSection extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => EditProfileScreen(),
+                ),
+              );
+            },
             child: Container(
               width: double.infinity,
               child: Text(

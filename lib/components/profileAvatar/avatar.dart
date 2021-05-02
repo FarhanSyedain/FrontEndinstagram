@@ -4,9 +4,16 @@ class ProfileAvatar extends StatelessWidget {
   final double width;
   final double height;
   final AssetImage picture;
-  final hasUnseenStories = true;
+  final hasUnseenStories;
+  final disabled;
 
-  ProfileAvatar(this.picture, {this.width, this.height});
+  ProfileAvatar(
+    this.picture, {
+    this.width,
+    this.height,
+    this.disabled = false,
+    this.hasUnseenStories = false,
+  });
 
   @override
   Widget build(BuildContext context) {

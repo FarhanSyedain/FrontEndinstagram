@@ -51,7 +51,7 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
-  var results;
+  var results ;
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +100,7 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   );
                 },
-                itemCount: results.length + 12,
+                itemCount: 12,
               ),
             ),
     );
