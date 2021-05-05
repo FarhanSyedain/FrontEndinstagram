@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:instagram/components/post/post.dart';
-import 'package:instagram/components/profileAvatar/avatar.dart';
-import 'package:instagram/providers/posts.dart';
 import 'package:instagram/screens/profile/components/tab.dart';
 import 'package:instagram/screens/profile/components/uppperSection.dart';
-import 'package:instagram/utilities/highlightMentionsHashtags.dart';
+
 
 class ProfilePage extends StatelessWidget {
   PreferredSizeWidget appBar(context) {
