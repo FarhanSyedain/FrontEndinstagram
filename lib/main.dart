@@ -4,8 +4,10 @@ import 'package:instagram/screens/chat/chatHome.dart';
 import 'package:instagram/screens/chat/screens/indidualChat.dart';
 import 'package:provider/provider.dart';
 import 'screens/main/tabScreen.dart';
+import 'providers/chat.dart';
 
 import 'constants/theme.dart' as themes;
+
 
 void main() {
   runApp(MyApp());
@@ -19,6 +21,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<Posts>(
           create: (ctx) => Posts(),
         ),
+        ChangeNotifierProvider<Chat>(
+          create: (ctx)=> Chat(),
+        )
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
