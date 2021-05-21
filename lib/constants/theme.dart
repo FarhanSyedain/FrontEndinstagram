@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 final ThemeData lightTheme = ThemeData(
   primaryColor: Colors.black,
   backgroundColor: Colors.white,
+  // cardColor: Color.fromRGBO(, g, b, opacity),
   textTheme: TextTheme(
     bodyText1: TextStyle(
       color: Colors.black,
@@ -31,6 +32,7 @@ final ThemeData lightTheme = ThemeData(
 
 final ThemeData darkTheme = ThemeData(
   primaryColor: Colors.white,
+  cardColor: Color.fromRGBO(21, 32, 42, 1),
   backgroundColor: Color.fromRGBO(0, 0, 0, 1),
   textTheme: TextTheme(
     bodyText1: TextStyle(
