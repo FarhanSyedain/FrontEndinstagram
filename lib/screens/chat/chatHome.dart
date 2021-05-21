@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:instagram/screens/chat/screens/components/chatHomeBody.dart';
+import 'package:instagram/screens/chat/components/chatHomeBody.dart';
 
 class ChatHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildApp(context),
+      appBar: buildAppBar(context),
       backgroundColor: Theme.of(context).backgroundColor,
       body: ChatHomeBody(),
     );
   }
 
-  PreferredSizeWidget buildApp(BuildContext context) {
+  PreferredSizeWidget buildAppBar(BuildContext context) {
     return AppBar(
       systemOverlayStyle: SystemUiOverlayStyle.light,
       backwardsCompatibility: false,
